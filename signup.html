@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Logo</p>
+        </div>
+        <div class="rightSide">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="login.html"><button style="background-color: #06FE10;color: white;" id="signBtn">Sign in</button></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="loginpage">
+        <img class="bgsvg" src="img/undraw_best_place_r685.svg" alt="">
+        <div class="background">
+            <img src="img/Login.png" alt="">
+        </div>
+        <div class="form">
+            <img src="img/user_avtar.svg" alt="">
+            <p class="loginHeading">CREATE ACCOUNT</p>
+            <form action="#">
+                <div>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirmpassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Get Started</button>
+                <p>Don't have account?&nbsp;&nbsp;<a href="login.html">Log In</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
