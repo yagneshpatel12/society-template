@@ -19,7 +19,7 @@ nav {
   position: fixed;
   top: 0px;
   left: 0px;
-  box-shadow: 2px 5px 25px #d4d4d4;
+  box-shadow: 2px 2px 25px #e2e2e2;
   background-color: white;
 }
 
@@ -54,7 +54,7 @@ nav .rightSide ul a li {
 nav .rightSide ul #signBtn, nav .rightSide ul #getStartedBtn {
   font-size: 17px;
   padding: 6px 10px;
-  box-shadow: 2px 5px 25px silver;
+  box-shadow: 2px 2px 25px #e2e2e2;
   background-color: white;
   border: none;
   outline: none;
