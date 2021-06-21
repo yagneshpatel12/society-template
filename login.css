@@ -74,7 +74,7 @@ nav .rightSide ul #getStartedBtn {
 .loginpage {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 93vh;
   overflow: hidden;
 }
 
@@ -189,9 +189,9 @@ nav .rightSide ul #getStartedBtn {
     margin-right: 0px;
   }
   .loginpage .bgsvg {
-    height: 200px;
+    height: 180px;
     width: 300px;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
   }
 }
 
