@@ -334,19 +334,27 @@ margin-bottom: 100px;
 #footer{
     width: 100vw;
   display: grid;
-  grid-template-rows: 220px 80px 50px 20px;
-grid-template-columns:1.7fr .8fr .8fr 1.7fr;
-grid-gap: 17px;
+  grid-template-rows: 10px 220px 50px 50px 10px;
+grid-template-columns:2fr 1fr 1fr 2fr;
+grid-gap: 15px;
 background-color: #B0A7E6;
+.topSpace{
+    grid-column: 1/5;
+}
    .footersms{
 
-padding-left: 30px;
+    margin-left: 30px;
  div{
-    
+
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     align-items: flex-start;
      margin-bottom: 30px;
+     p{
+         font-size: 17px;
+         color:black;
+         text-align: center;
+     }
      #footerlogo{
         display: flex;
         justify-content: center;
@@ -357,21 +365,14 @@ padding-left: 30px;
          border-radius: 50%;
         color: white;
      }
-     p{
-         
-         font-size: 17px;
-         color:black;
-         text-align: center;
-     }
  }
  p{
 font-size: 17px;
-margin-top: 17px;
+
  }
    }
    .about{
-padding-left: 50px;
-padding-top: 43px;
+padding-left: 40px;
 p{
     font-size: 24px;
     color: black;
@@ -387,8 +388,6 @@ a{
 }
    }
    .location{
-    padding-left: 17px;
-    padding-top: 43px;
 p{
 margin-bottom: 17px;
     font-size: 24px;
@@ -399,9 +398,9 @@ pre{
 }
    }
    .getintouch{
-    padding-top: 43px;
-grid-row: 1/4;
-grid-column: 4/5;
+       grid-row: 2/5;
+       grid-column: 4/5;
+
 display: flex;
 flex-direction: column;
 p{
@@ -427,30 +426,25 @@ border-radius: 7px;
 }
    }
    .copyright{
-
-    grid-column: 1/4;
-    text-align: start;
     font-size: 17px;
     margin-top: 10px;
     margin-left: 30px;
+    grid-column: 1/4;
        }
    .share{
-
 grid-column: 1/4;
+margin-left: 30px;
 display: flex;
 justify-content:flex-start;
 align-items: center;
 a{
     img{
-        height: 50px;
         width: 50px;
-        margin-left: 50px;
     }
 }
    }
    .bottomSpace{
-
-       grid-column: 1/5;
+grid-column: 1/5;
    }
 
 }
@@ -524,27 +518,115 @@ a{
         }
     }
     #footer{
-        grid-template-rows: 250px 430px 50px 20px;
-        grid-template-columns:1.5fr 1fr 1fr;
-        grid-gap: 15px;
+        grid-template-rows: 10px 220px 400px 50px 35px 10px;
+        grid-template-columns:2fr 1fr 1fr 2fr;
         .footersms{
-border: 1px solid black;
-            // grid-column: 1/3;
+       
+            grid-column: 1/3;
         }
        .about{
-            //   grid-column: 3/4;
-              border: 1px solid black;
-
+   
+         grid-column: 3/4;
        }
        .location{
-        //    grid-column: 4/5;
-           border: 1px solid black;
+   
+           grid-column: 4/5;
+           padding-left: 40px;
        }
        .getintouch{
-           grid-column: 1/5;
-           grid-row: 2/3;
-           border: 1px solid black;
+           margin-left: 30px;
+   
+         grid-column: 1/5;
+         grid-row: 3/4;
        }
+       .copyright{
+   
+ grid-column: 1/5;
+ text-align: center;
+       }
+       .share{
+   
+grid-column: 1/5;
+display: flex;
+justify-content: center;
+align-items: center;
+a img{
+margin:20px;
+}
+       }
+       .bottomSpace{
+   
+       }
+    }
+}
+@media screen and (max-width:900px){
+    #footer{
+        grid-gap:10px;
+        .footersms{
+            margin-left: 10px;
+        }
+        .about{
+            padding-left: 0px;
+        }
+        .location{
+            padding-left: 20px;
+        }
+        .getintouch{
+            margin-left: 10px;
+        }
+        .share {
+            margin-left: 10px;
+        }
+        .copyright{
+            margin-left: 10px;
+        }
+    }
+}
+@media screen and (max-width:650px){
+    #footer{
+        grid-template-rows: 10px 220px 200px 380px 35px 50px 5px;
+        grid-template-columns:1fr 1fr;
+        .topSpace{
+            grid-column: 1/3;
+        }
+        .footersms{
+            grid-column: 1/3;
+            div{
+                flex-direction: column;
+                align-items: center;
+                justify-content:center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .about{
+          grid-column: 1/2;
+          margin-left: 10px;
+        }
+        .location{
+            grid-column: 2/3;
+            margin-left: 10px;
+        }
+        .getintouch{
+          grid-column: 1/3;
+          grid-row: 4/5;
+        }
+        .share {
+            grid-column: 1/3;
+            overflow: hidden;
+            a img{
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+        .copyright{
+            grid-column: 1/3;
+            grid-row:6/8;
+        }
+        .bottomSpace{
+            grid-column: 1/3;
+        }
     }
 }
 @media screen and (max-width: 600px){
@@ -683,6 +765,11 @@ margin-top: 20px;
             }
         }
     }
+    #footer{
+        .location{
+            padding-left: 0px;
+        }
+    }
     
 }
 @media screen and (max-width: 400px){
@@ -734,6 +821,55 @@ margin-top: 20px;
         }
         .smssvg{
             width: 170px;
+        }
+    }
+    #footer{
+        grid-template-rows: 10px 250px 180px 150px 380px 35px 50px 5px;
+        grid-template-columns:1fr 1fr;
+        grid-gap: 5px;
+        .topSpace{
+            grid-column: 1/3;
+            margin-left: 5px;
+        }
+        .footersms{
+            grid-column: 1/3;
+            margin-left: 5px;
+            div{
+                flex-direction: column;
+                align-items: center;
+                justify-content:center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .about{
+          grid-column: 1/3;
+          margin-left: 5px;
+        }
+        .location{
+            grid-column: 1/3;
+            margin-left: 5px;
+        }
+        .getintouch{
+          grid-column: 1/3;
+          grid-row: 5/6;
+          margin-left: 5px;
+        }
+        .share {
+            grid-column: 1/3;
+            overflow: hidden;
+            a img{
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+        .copyright{
+            grid-column: 1/3;
+            grid-row:7/9;
+        }
+        .bottomSpace{
+            grid-column: 1/3;
         }
     }
 }

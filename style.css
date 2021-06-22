@@ -383,21 +383,31 @@ button {
 #footer {
   width: 100vw;
   display: grid;
-  grid-template-rows: 220px 80px 50px 20px;
-  grid-template-columns: 1.7fr .8fr .8fr 1.7fr;
-  grid-gap: 17px;
+  grid-template-rows: 10px 220px 50px 50px 10px;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-gap: 15px;
   background-color: #B0A7E6;
 }
 
+#footer .topSpace {
+  grid-column: 1/5;
+}
+
 #footer .footersms {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 #footer .footersms div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
+}
+
+#footer .footersms div p {
+  font-size: 17px;
+  color: black;
+  text-align: center;
 }
 
 #footer .footersms div #footerlogo {
@@ -411,20 +421,12 @@ button {
   color: white;
 }
 
-#footer .footersms div p {
-  font-size: 17px;
-  color: black;
-  text-align: center;
-}
-
 #footer .footersms p {
   font-size: 17px;
-  margin-top: 17px;
 }
 
 #footer .about {
-  padding-left: 50px;
-  padding-top: 43px;
+  padding-left: 40px;
 }
 
 #footer .about p {
@@ -442,11 +444,6 @@ button {
   cursor: pointer;
 }
 
-#footer .location {
-  padding-left: 17px;
-  padding-top: 43px;
-}
-
 #footer .location p {
   margin-bottom: 17px;
   font-size: 24px;
@@ -458,8 +455,7 @@ button {
 }
 
 #footer .getintouch {
-  padding-top: 43px;
-  grid-row: 1/4;
+  grid-row: 2/5;
   grid-column: 4/5;
   display: flex;
   flex-direction: column;
@@ -488,24 +484,22 @@ button {
 }
 
 #footer .copyright {
-  grid-column: 1/4;
-  text-align: start;
   font-size: 17px;
   margin-top: 10px;
   margin-left: 30px;
+  grid-column: 1/4;
 }
 
 #footer .share {
   grid-column: 1/4;
+  margin-left: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 #footer .share a img {
-  height: 50px;
   width: 50px;
-  margin-left: 50px;
 }
 
 #footer .bottomSpace {
@@ -564,23 +558,108 @@ button {
     margin: 20px 0px;
   }
   #footer {
-    grid-template-rows: 250px 430px 50px 20px;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-rows: 10px 220px 400px 50px 35px 10px;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
   }
   #footer .footersms {
-    border: 1px solid black;
+    grid-column: 1/3;
   }
   #footer .about {
-    border: 1px solid black;
+    grid-column: 3/4;
   }
   #footer .location {
-    border: 1px solid black;
+    grid-column: 4/5;
+    padding-left: 40px;
   }
   #footer .getintouch {
+    margin-left: 30px;
     grid-column: 1/5;
-    grid-row: 2/3;
-    border: 1px solid black;
+    grid-row: 3/4;
+  }
+  #footer .copyright {
+    grid-column: 1/5;
+    text-align: center;
+  }
+  #footer .share {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .share a img {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #footer {
+    grid-gap: 10px;
+  }
+  #footer .footersms {
+    margin-left: 10px;
+  }
+  #footer .about {
+    padding-left: 0px;
+  }
+  #footer .location {
+    padding-left: 20px;
+  }
+  #footer .getintouch {
+    margin-left: 10px;
+  }
+  #footer .share {
+    margin-left: 10px;
+  }
+  #footer .copyright {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #footer {
+    grid-template-rows: 10px 220px 200px 380px 35px 50px 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer .topSpace {
+    grid-column: 1/3;
+  }
+  #footer .footersms {
+    grid-column: 1/3;
+  }
+  #footer .footersms div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer .footersms p {
+    text-align: center;
+  }
+  #footer .about {
+    grid-column: 1/2;
+    margin-left: 10px;
+  }
+  #footer .location {
+    grid-column: 2/3;
+    margin-left: 10px;
+  }
+  #footer .getintouch {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  #footer .share {
+    grid-column: 1/3;
+    overflow: hidden;
+  }
+  #footer .share a img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #footer .copyright {
+    grid-column: 1/3;
+    grid-row: 6/8;
+  }
+  #footer .bottomSpace {
+    grid-column: 1/3;
   }
 }
 
@@ -697,6 +776,9 @@ button {
   #aboutus .details img {
     width: 130px;
   }
+  #footer .location {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -738,5 +820,54 @@ button {
   }
   .sms .smssvg {
     width: 170px;
+  }
+  #footer {
+    grid-template-rows: 10px 250px 180px 150px 380px 35px 50px 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  #footer .topSpace {
+    grid-column: 1/3;
+    margin-left: 5px;
+  }
+  #footer .footersms {
+    grid-column: 1/3;
+    margin-left: 5px;
+  }
+  #footer .footersms div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer .footersms p {
+    text-align: center;
+  }
+  #footer .about {
+    grid-column: 1/3;
+    margin-left: 5px;
+  }
+  #footer .location {
+    grid-column: 1/3;
+    margin-left: 5px;
+  }
+  #footer .getintouch {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-left: 5px;
+  }
+  #footer .share {
+    grid-column: 1/3;
+    overflow: hidden;
+  }
+  #footer .share a img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #footer .copyright {
+    grid-column: 1/3;
+    grid-row: 7/9;
+  }
+  #footer .bottomSpace {
+    grid-column: 1/3;
   }
 }
