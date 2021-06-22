@@ -33,10 +33,37 @@ nav .logo P {
 
 nav .hamburger {
   display: none;
+  transition: all .5s;
+}
+
+nav .hamburger .line {
+  transition: all .5s;
+  height: 3px;
+  width: 20px;
+  margin: 3px 0px;
+  background-color: #666;
+}
+
+nav #line1 {
+  transform-origin: top left;
+  transform: rotate(35deg);
+  width: 22px;
+}
+
+nav #line2 {
+  visibility: hidden;
+}
+
+nav #line3 {
+  width: 22px;
+  transform: rotate(-35deg);
+  transform-origin: bottom left;
 }
 
 nav .rightSide {
   margin-right: 50px;
+  overflow: hidden;
+  transition: .5s;
 }
 
 nav .rightSide ul {
@@ -723,7 +750,36 @@ button {
     font-size: 24px;
   }
   nav .rightSide {
-    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    width: 100vw;
+    padding-bottom: 10px;
+  }
+  nav .rightSide ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  nav .rightSide ul a {
+    text-align: center;
+    width: 100%;
+  }
+  nav .rightSide ul a li {
+    width: 100%;
+    padding: 12px 0px;
+    color: #7A89BF;
+    transition: all .3s;
+  }
+  nav .rightSide ul a li:hover {
+    background-color: #7A89BF;
+    color: white;
+  }
+  nav .rightSide ul #signBtn, nav .rightSide ul #getStartedBtn {
+    width: 100vw;
+    margin: 8px 0px;
+    padding: 12px 0px;
+    box-shadow: 1px 1px 40px #e7e7e7;
+    border-radius: 0px;
   }
   .primaryHeading {
     font-size: 30px;
@@ -835,6 +891,16 @@ button {
   }
   .sms .textSection .smsDiscription {
     width: 300px;
+  }
+  nav .rightSide {
+    padding-bottom: 5px;
+  }
+  nav .rightSide ul a li {
+    font-size: 15px;
+    padding: 8px 0px;
+  }
+  nav #signBtn, nav #getStartedBtn {
+    padding: 8px 0px;
   }
 }
 
