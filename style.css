@@ -357,17 +357,19 @@ button {
 }
 
 #aboutus {
-  margin: 100px 0px;
+  margin-bottom: 100px;
 }
 
 #aboutus .details {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 #aboutus .details ul {
-  width: 700px;
+  margin-right: 40px;
 }
 
 #aboutus .details ul li {
@@ -375,8 +377,7 @@ button {
 }
 
 #aboutus .details img {
-  height: 350px;
-  width: 350px;
+  width: 330px;
 }
 
 #footer {
@@ -549,6 +550,19 @@ button {
   .postSection .posts .postCard {
     margin: 20px;
   }
+  #aboutus .details {
+    flex-direction: column-reverse;
+  }
+  #aboutus .details ul {
+    margin: 0px;
+  }
+  #aboutus .details ul li {
+    font-size: 15px;
+  }
+  #aboutus .details img {
+    width: 250px;
+    margin: 20px 0px;
+  }
   #footer {
     grid-template-rows: 250px 430px 50px 20px;
     grid-template-columns: 1.5fr 1fr 1fr;
@@ -573,6 +587,10 @@ button {
 @media screen and (max-width: 600px) {
   .serviceSection .cardSection .card {
     margin: 10px;
+  }
+  #aboutus .details img {
+    width: 170px;
+    margin: 20px;
   }
 }
 
@@ -637,6 +655,9 @@ button {
   .postSection .posts .postCard {
     width: 220px;
   }
+  #aboutus .details img {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -669,6 +690,12 @@ button {
   #mainSection .svgImg {
     width: 200px;
     margin: 20px 0px;
+  }
+  #aboutus .details ul li {
+    font-size: 14px;
+  }
+  #aboutus .details img {
+    width: 130px;
   }
 }
 
