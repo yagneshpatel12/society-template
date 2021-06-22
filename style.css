@@ -636,13 +636,24 @@ button {
     align-items: center;
     justify-content: center;
   }
+  #footer .footersms div p {
+    margin-top: 5px;
+    font-size: 20px !important;
+  }
   #footer .footersms p {
     text-align: center;
+    font-size: 14px;
   }
   #footer .about {
     text-align: center;
     grid-column: 1/2;
     margin-left: 10px;
+  }
+  #footer .about p {
+    font-size: 20px;
+  }
+  #footer .about a {
+    font-size: 14px;
   }
   #footer .location {
     padding-left: 0px;
@@ -650,9 +661,22 @@ button {
     grid-column: 2/3;
     margin-left: 10px;
   }
+  #footer .location p {
+    font-size: 20px;
+  }
+  #footer .location pre {
+    font-size: 14px;
+  }
   #footer .getintouch {
     grid-column: 1/3;
     grid-row: 4/5;
+  }
+  #footer .getintouch p {
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer .getintouch .form input, #footer .getintouch textarea {
+    font-size: 14px;
   }
   #footer .share {
     grid-column: 1/3;
@@ -665,6 +689,7 @@ button {
   #footer .copyright {
     grid-column: 1/3;
     grid-row: 6/8;
+    font-size: 15px;
   }
   #footer .bottomSpace {
     grid-column: 1/3;
@@ -786,6 +811,9 @@ button {
   }
   #footer .location {
     padding-left: 0px;
+  }
+  #footer .share a {
+    margin: 0px 5px;
   }
 }
 
