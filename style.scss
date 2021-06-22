@@ -708,9 +708,11 @@ margin:20px;
 @media screen and (max-width: 800px){
        nav{
            .hamburger{
-               display: inline;
+               display: block;
                margin-right: 30px;
                font-size: 24px;
+               background-color: red;
+               z-index: 500;
            }
            .rightSide{
                position: absolute;

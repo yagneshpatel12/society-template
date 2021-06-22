@@ -745,9 +745,11 @@ button {
     height: 55px;
   }
   nav .hamburger {
-    display: inline;
+    display: block;
     margin-right: 30px;
     font-size: 24px;
+    background-color: red;
+    z-index: 500;
   }
   nav .rightSide {
     position: absolute;
