@@ -127,7 +127,6 @@ button{
     }
 }
 .sms{
-    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -149,7 +148,9 @@ button{
    }
 }
 .serviceSection{
-    padding: 17px 0px;
+    margin-bottom: 100px;
+    padding: 30px 0px;
+    padding-top: 100px;
     width: 100%;
     background-image: url('img/sms.jpg');
     background-position: center;
@@ -162,15 +163,14 @@ button{
         flex-wrap: wrap;
         width: 80%;
         margin: auto;
-        margin-top: 17px;
+        margin-top: 20px;
         .card{
             margin:30px;
-           border-radius: 15px;
+            border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            text-align: center;
             width: 240px;
             background-color: white;
             padding: 0px 5px;
@@ -185,8 +185,8 @@ button{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 50px;
                 width: 50px;
+                height: 50px;
                 border-radius: 100%;
                 background-color: white;
                 box-shadow: 2px 5px 25px rgb(204, 204, 204);
@@ -203,14 +203,22 @@ button{
                  color: black;
                  margin: 15px 0px;
                 }
+                span{
+                    font-size: 14px;
+                }
                 .serviceBtn{
                 background-color: #7A89BF;
                 color: white;
-                margin: 15px 0px;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px auto;
                 i{
                     color: white;
                     margin-left: 10px;
-                    font-size: 17px;
+                    font-size: 12px;
+                    
                 }
                 }
             }
@@ -221,6 +229,7 @@ button{
         margin: auto;
         text-align: center;
         color: white;
+        margin-top: 10px;
         i{
             color: white;
             font-size: 17px;
@@ -229,21 +238,22 @@ button{
     }
 }
 .whatIsSms{
-    margin-top: 100px;
-    text-align: start;
-    .list{
+    margin-bottom: 100px;
+
+    ul{
+    
    width: 75%;
    margin: auto;
-text-align: start;
-margin-top: 50px;
-    .listItem{
+margin-top: 40px;
+    li{
         margin: 15px 0px;
         display: flex;
         i{
-            display: inline-block;
-            font-size: 17px;
             color:#06FE10;
+            width: 25px;
+            min-width: 25px;
             margin-right: 15px;
+            font-size: 17px;
         }
         p{
             font-size: 17px;
@@ -252,11 +262,12 @@ margin-top: 50px;
 } 
 }
 .postSection{
-margin: 100px 0px;
+margin-bottom: 100px;
     .posts{
-     margin-top: 50px;
+     margin-top: 40px;
      display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .postCard{
         cursor: pointer;
         margin: 50px;
@@ -283,7 +294,6 @@ margin: 100px 0px;
         .aboutPost{
             color: #666;
             font-size: 15px;
-         width: 250px;
          margin: auto;
          margin-bottom: 17px;
         }
@@ -484,6 +494,18 @@ a{
             width: 300px;
         }
     }
+    .serviceSection{
+        .cardSection{
+            width: 100%;
+        }
+    }
+    .postSection{
+        .posts{
+            .postCard{
+                margin: 20px;
+            }
+        }
+    }
     #footer{
         grid-template-rows: 250px 430px 50px 20px;
         grid-template-columns:1.5fr 1fr 1fr;
@@ -506,6 +528,15 @@ border: 1px solid black;
            grid-row: 2/3;
            border: 1px solid black;
        }
+    }
+}
+@media screen and (max-width: 600px){
+    .serviceSection{
+        .cardSection{
+            .card{
+                margin: 10px;
+            }
+        }
     }
 }
 @media screen and (max-width: 800px){
@@ -562,6 +593,19 @@ margin-top: 20px;
             margin:20px 0px;
            }
        }
+       .whatIsSms{
+           ul{
+               margin-top: 20px;
+               width: 90%;
+           }
+       }
+       .postSection{
+        .posts{
+            .postCard{
+               width: 220px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 450px){
     nav{
