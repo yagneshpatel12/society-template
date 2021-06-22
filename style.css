@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #666;
+  overflow-x: hidden;
 }
 
 html {
@@ -16,12 +17,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  height: 65px;
+  height: 60px;
   width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  box-shadow: 2px 5px 25px #d4d4d4;
+  box-shadow: 2px 2px 30px #e9e9e9;
   background-color: white;
 }
 
@@ -31,6 +29,10 @@ nav .logo {
 
 nav .logo P {
   font-size: 23px;
+}
+
+nav .hamburger {
+  display: none;
 }
 
 nav .rightSide {
@@ -74,14 +76,12 @@ button {
 }
 
 #mainSection {
+  margin: 108px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
-}
-
-#mainSection .textSection {
-  margin-left: 150px;
+  width: 100%;
+  min-width: 100vw;
 }
 
 #mainSection .textSection .heading {
@@ -93,82 +93,79 @@ button {
   margin-top: 17px;
   font-size: 17px;
   font-weight: 500 !important;
+  width: 400px;
+  margin-left: 15px;
 }
 
 #mainSection .textSection .searchSection {
-  cursor: pointer;
   width: 450px;
-  height: 50px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 25px #cccccc;
+}
+
+#mainSection .textSection .searchSection:hover {
+  box-shadow: 3px 3px 30px #b9b9b9;
 }
 
 #mainSection .textSection .searchSection input {
   text-indent: 17px;
-  height: 100%;
   width: 100%;
   font-size: 17px;
-  padding: 5px;
+  padding: 15px 0px;
   outline: none;
   border: none;
-  box-shadow: 5px 5px 30px #cfcfcf;
-  border-radius: 12px;
+  background-color: white;
+  border-radius: 12px 0px 0px 12px;
 }
 
-#mainSection .textSection .searchSection input:hover {
-  box-shadow: 3px 7px 30px #bbbbbb;
-}
-
-#mainSection .textSection .searchSection .searchIcon {
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  width: 75px;
-  position: relative;
-  top: -45px;
-  left: 368px;
+#mainSection .textSection .searchSection i {
   background-color: #06FE10;
-}
-
-#mainSection .textSection .searchSection .searchIcon img {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 54px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 5px solid white;
 }
 
 #mainSection .svgImg {
-  height: 500px;
   width: 500px;
-  margin-right: 150px;
 }
 
 #mainSection .svgImg img {
-  height: 100%;
   width: 100%;
 }
 
 .sms {
-  height: 360px;
-  margin: 80px 0px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #B0A7E6;
+  padding: 25px 0px;
 }
 
 .sms .textSection .smsDiscription {
   text-align: center;
   margin-top: 17px;
   font-size: 17px;
+  width: 500px;
 }
 
 .sms .smssvg {
-  height: 400px;
-  width: 400px;
+  width: 350px;
 }
 
 .sms .smssvg img {
-  height: 100%;
   width: 100%;
 }
 
@@ -375,7 +372,7 @@ button {
 }
 
 #footer {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-rows: 220px 80px 50px 20px;
   grid-template-columns: 1.7fr .8fr .8fr 1.7fr;
@@ -408,6 +405,7 @@ button {
 #footer .footersms div p {
   font-size: 17px;
   color: black;
+  text-align: center;
 }
 
 #footer .footersms p {
@@ -509,4 +507,182 @@ button {
   color: black;
   font-size: 42px;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #mainSection .textSection .heading {
+    font-size: 40px;
+  }
+  #mainSection .textSection .discription {
+    font-size: 15px;
+  }
+  #mainSection .textSection .searchSection {
+    width: 400px;
+  }
+  #mainSection .textSection .searchSection .searchIcon {
+    left: 318px;
+  }
+  #mainSection .svgImg {
+    width: 400px;
+  }
+  .primaryHeading {
+    font-size: 36px;
+  }
+  .sms .textSection .smsDiscription {
+    font-size: 15px;
+    width: 400px;
+  }
+  .sms .smssvg {
+    width: 300px;
+  }
+  #footer {
+    grid-template-rows: 250px 430px 50px 20px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  #footer .footersms {
+    border: 1px solid black;
+  }
+  #footer .about {
+    border: 1px solid black;
+  }
+  #footer .location {
+    border: 1px solid black;
+  }
+  #footer .getintouch {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    height: 55px;
+  }
+  nav .hamburger {
+    display: inline;
+    margin-right: 30px;
+    font-size: 24px;
+  }
+  nav .rightSide {
+    display: none;
+  }
+  .primaryHeading {
+    font-size: 30px;
+  }
+  .sms {
+    flex-direction: column-reverse;
+  }
+  .sms .smssvg {
+    margin-bottom: 20px;
+    width: 250px;
+  }
+  #mainSection {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+  #mainSection .textSection {
+    text-align: center;
+  }
+  #mainSection .textSection .heading {
+    font-size: 34px;
+  }
+  #mainSection .textSection .discription {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #mainSection .textSection .searchSection {
+    margin: auto;
+    margin-top: 20px;
+  }
+  #mainSection .textSection .searchSection input {
+    padding: 10px 0px;
+  }
+  #mainSection .textSection .searchSection i {
+    height: 44px;
+    border: 4px solid white;
+  }
+  #mainSection .svgImg {
+    width: 250px;
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    height: 50px;
+  }
+  nav .hamburger {
+    margin-right: 15px;
+  }
+  nav .logo {
+    margin-left: 15px;
+  }
+  #mainSection {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  #mainSection .textSection .heading {
+    font-size: 28px;
+  }
+  #mainSection .textSection .searchSection {
+    width: 350px;
+  }
+  #mainSection .textSection .searchSection input {
+    padding: 10px 0px;
+  }
+  #mainSection .textSection .searchSection i {
+    height: 44px;
+    border: 4px solid white;
+  }
+  #mainSection .svgImg {
+    width: 200px;
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #mainSection {
+    justify-self: center;
+  }
+  #mainSection .textSection .searchSection {
+    width: 300px;
+    margin: auto;
+  }
+  .sms .textSection .smsDiscription {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #mainSection {
+    justify-self: center;
+  }
+  #mainSection .textSection .heading {
+    font-size: 24px;
+  }
+  #mainSection .textSection .discription {
+    width: 250px;
+  }
+  #mainSection .textSection .searchSection {
+    margin-top: 20px;
+    width: 270px;
+    margin: auto;
+  }
+  .primaryHeading {
+    font-size: 24px;
+  }
+  .sms .textSection .smsDiscription {
+    font-size: 14px;
+    width: 220px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .sms .smssvg {
+    width: 170px;
+  }
 }
