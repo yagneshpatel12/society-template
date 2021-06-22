@@ -824,6 +824,7 @@ button {
   #mainSection .textSection .searchSection {
     width: 300px;
     margin: auto;
+    margin-top: 20px;
   }
   .sms .textSection .smsDiscription {
     width: 300px;
