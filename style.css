@@ -62,7 +62,6 @@ nav #line3 {
 
 nav .rightSide {
   margin-right: 50px;
-  overflow: hidden;
   transition: .5s;
 }
 
@@ -748,8 +747,6 @@ button {
     display: block;
     margin-right: 30px;
     font-size: 24px;
-    background-color: red;
-    z-index: 500;
   }
   nav .rightSide {
     position: absolute;

@@ -51,7 +51,7 @@ transform-origin: bottom left;
 }
 .rightSide{
     margin-right: 50px;
-    overflow: hidden;
+    // overflow: hidden;
     transition: .5s;
    ul{
        display: flex;
@@ -711,8 +711,6 @@ margin:20px;
                display: block;
                margin-right: 30px;
                font-size: 24px;
-               background-color: red;
-               z-index: 500;
            }
            .rightSide{
                position: absolute;
