@@ -383,7 +383,7 @@ button {
 #footer {
   width: 100vw;
   display: grid;
-  grid-template-rows: 10px 220px 50px 50px 10px;
+  grid-template-rows: 10px 220px 55px 40px 10px;
   grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-gap: 15px;
   background-color: #B0A7E6;
@@ -455,7 +455,7 @@ button {
 }
 
 #footer .getintouch {
-  grid-row: 2/5;
+  grid-row: 2/6;
   grid-column: 4/5;
   display: flex;
   flex-direction: column;
@@ -496,6 +496,12 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#footer .share a {
+  margin: 0px 20px;
 }
 
 #footer .share a img {
@@ -558,7 +564,7 @@ button {
     margin: 20px 0px;
   }
   #footer {
-    grid-template-rows: 10px 220px 400px 50px 35px 10px;
+    grid-template-rows: 10px 220px 400px 55px 40px 10px;
     grid-template-columns: 2fr 1fr 1fr 2fr;
   }
   #footer .footersms {
