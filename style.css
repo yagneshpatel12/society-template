@@ -668,6 +668,7 @@ button {
     font-size: 14px;
   }
   #footer .getintouch {
+    margin-left: 0px;
     grid-column: 1/3;
     grid-row: 4/5;
   }
