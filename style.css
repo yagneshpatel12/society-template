@@ -675,8 +675,14 @@ button {
     font-size: 20px;
     text-align: center;
   }
-  #footer .getintouch .form input, #footer .getintouch textarea {
+  #footer .getintouch form {
+    text-align: center;
+  }
+  #footer .getintouch form input, #footer .getintouch textarea {
     font-size: 14px;
+  }
+  #footer .getintouch form button {
+    width: 150px;
   }
   #footer .share {
     grid-column: 1/3;
