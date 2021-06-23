@@ -655,13 +655,13 @@ button {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1000px) and (orientation: portrait) {
-  #footer .footerDiscription {
-    font-size: 14px !important;
-    background-color: #248000;
+  #footer .about p {
+    font-size: 15px !important;
+    background-color: red;
   }
-  #footer .footerHeading {
-    font-size: 20px !important;
-    background-color: #4c00ff;
+  #footer .about a {
+    font-size: 10px !important;
+    background-color: yellow;
   }
 }
 
