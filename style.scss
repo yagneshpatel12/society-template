@@ -52,7 +52,6 @@ transform-origin: bottom left;
 .rightSide{
     z-index: 1000;
     margin-right: 50px;
-    overflow: visible;
     transition: .5s;
     max-height: 35px;
     min-height: 35px;
@@ -61,10 +60,8 @@ transform-origin: bottom left;
        align-items: center;
        justify-content: center;
        list-style: none;
-       overflow: visible;
        a{
           text-decoration: none;
-          overflow: visible;
           li{
               font-size: 17px;
               margin-right: 30px;
@@ -878,6 +875,7 @@ margin:20px;
                font-size: 24px;
            }
            .rightSide{
+               overflow: hidden;
                min-height: 0px;
             max-height: 0px;
                position: absolute;
