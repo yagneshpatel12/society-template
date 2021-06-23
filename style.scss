@@ -990,7 +990,7 @@ margin-top: 20px;
     }
     .loginpage {
       .bottombackground{
-          height: 200px;
+          height: 180px;
       }
         .bgsvg{
         height: 170px;
@@ -998,6 +998,9 @@ margin-top: 20px;
         // bottom: -10px;
         display: none;
     }
+}
+*{
+    overflow: hidden;
 }
     
     
