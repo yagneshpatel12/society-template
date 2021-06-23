@@ -479,7 +479,108 @@ grid-column: 1/5;
     font-size: 42px;
     text-align: center;
 }
+.loginpage{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .bgsvg{
+ position: absolute;
+ height: 250px;
+ bottom: -21px;
+ width: 450px;
+ .bottombackground{
+     background-color: #7A89BF;
+     width: 100%;
+     height: 0px;
+ }
+    }
+    .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        img{
+           height: 101%;
+           width: 100%;
+           margin-left: -5px;
+        }
+    }
+    .form{
+        margin: 61px auto;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        text-align: center;
+        img{
+            width: 100px;
+        }
+       .loginHeading{
+           margin-top: 20px;
+           font-size: 36px;
+           color: black;
+       }
+        form{
+            margin-top: 15px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 330px;
+            div{
+                 border: none;
+                 margin: 5px;
+                 border-bottom: 2px solid #b0a7e6;
+                 width: 330px;
+                 text-align: start;
+                  i{
+                    position: relative;
+                    left: 20px;
+                    color: rgb(129, 129, 129);
+                  }
+                input{
+                    text-indent: 20px;
+                    font-size: 17px;
+                    border: none;
+                    outline: none;
+                    font-weight: 500 !important;
+                    margin: 10px;
+                    background-color: transparent;
+                }
+            }
+            a{
+            width: 100%;
+               text-align: end;
+               margin-top: 10px;
+               color: rgb(44, 44, 255);
+            }
+            button{
+                margin: auto;
+                width: 90%;
+                font-size: 24px;
+                background-color: #06FE10;
+                border-radius: 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 5px 0px;
+                color: white;
+                margin:15px 0px;
 
+            }
+            p{
+                text-align: center;
+                color: rgb(112, 112, 112);
+                a{
+                    display: inline;
+                }
+            }
+        }
+    }
+}
 //responsive
 @media screen and (max-width: 1024px){
     #mainSection{
@@ -581,6 +682,13 @@ margin:20px;
        .bottomSpace{
    
        }
+    }
+    .loginpage{
+        .bgsvg{
+            height: 180px;
+            width: 300px;
+            margin-bottom: 0px;
+        }
     }
 }
 @media screen and (max-width:900px){
@@ -812,6 +920,19 @@ margin-top: 20px;
             }
         }
     }
+    .loginpage{
+        .form{
+            margin: 72px auto;
+            .loginHeading{
+                font-size: 25px;
+            }
+            form{
+                button{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 450px){
     nav{
@@ -866,6 +987,18 @@ margin-top: 20px;
             }
         }
     }
+    .loginpage {
+      .bottombackground{
+          height: 7px;
+      }
+        .bgsvg{
+        height: 170px;
+        width: 300px;
+        // bottom: -10px;
+        display: none;
+    }
+}
+    
     
 }
 @media screen and (max-width: 400px){
@@ -896,6 +1029,12 @@ margin-top: 20px;
         }
         #signBtn,#getStartedBtn{
             padding: 8px 0px;
+        }
+    }
+    .loginpage .form form{
+        width: 280px;
+        div{
+            width: 280px;
         }
     }
 }
@@ -981,10 +1120,28 @@ margin-top: 20px;
             grid-column: 1/3;
         }
     }
+    .loginpage .bgsvg{
+        display: none;
+    }
 }
 @media screen and (max-width: 300px){
     #footer{
         grid-template-rows: 10px 280px 180px 150px 380px 35px 50px 5px;
+    }
+    .loginpage{
+        .form form{
+            width: 220px;
+            div{
+                width: 220px;
+                i{
+                    left: 10px;
+                }
+                input{
+                    width: 80%;
+                }
+            }
+        }
+
     }
 }
 

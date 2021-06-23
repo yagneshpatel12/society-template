@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
     crossorigin="anonymous" />
@@ -15,6 +15,11 @@
     <nav>
         <div class="logo">
             <p>Logo</p>
+        </div>
+        <div class="hamburger" onclick="togglemenu()">
+            <div class="line"></div>
+            <div class="line" style="transition: none;"></div>
+            <div class="line"></div>
         </div>
         <div class="rightSide">
             <ul>
@@ -27,7 +32,7 @@
         <img class="bgsvg" src="img/undraw_best_place_r685.svg" alt="">
         <div class="background">
             <img src="img/Login.png" alt="">
-        </div>
+    </div> 
         <div class="form">
             <img src="img/user_avtar.svg" alt="">
             <p class="loginHeading">WELCOME BACK</p>
@@ -41,10 +46,12 @@
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <a href="#">Forgot Password?</a>
-                <button type="submit">Login</button>
+                <button type="submit">Sign in</button>
                 <p>Don't have account?&nbsp;&nbsp;<a href="signup.html">sign Up</a></p>
             </form>
         </div>
+        <div class="bottombackground"></div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
