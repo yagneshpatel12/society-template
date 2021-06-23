@@ -740,6 +740,10 @@ button {
   #footer {
     grid-gap: 10px;
   }
+  #footer .footerheading {
+    font-size: 20px;
+    background-color: red;
+  }
   #footer .footersms {
     margin-left: 10px;
   }
