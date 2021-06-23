@@ -50,6 +50,7 @@ transform: rotate(-35deg);
 transform-origin: bottom left;
 }
 .rightSide{
+    z-index: 1000;
     margin-right: 50px;
     overflow: hidden;
     transition: .5s;

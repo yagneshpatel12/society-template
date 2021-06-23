@@ -61,6 +61,7 @@ nav #line3 {
 }
 
 nav .rightSide {
+  z-index: 1000;
   margin-right: 50px;
   overflow: hidden;
   transition: .5s;
