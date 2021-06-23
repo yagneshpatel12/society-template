@@ -10,6 +10,7 @@
     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
     crossorigin="anonymous" />
     <link rel="icon" href="img/images.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
         body{
@@ -34,11 +35,11 @@
         </div>
     </nav>
     <div class="loginpage">
-        <img class="bgsvg" src="img/undraw_best_place_r685.svg" alt="">
+        <img class="bgsvg" data-aos='slide-up' src="img/undraw_best_place_r685.svg" alt="">
         <div class="background">
             <img src="img/Login.png" alt="">
         </div>
-        <div class="form">
+        <div class="form" data-aos="zoom-in">
             <img src="img/user_avtar.svg" alt="">
             <p class="loginHeading">CREATE ACCOUNT</p>
             <form action="#">
@@ -61,4 +62,11 @@
     </div>
 </body>
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 120,
+      duration: 600
+  });
+</script>
 </html>
