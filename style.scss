@@ -990,14 +990,17 @@ margin-top: 20px;
         }
     }
     .loginpage {
+       padding-top: 80px;
       .bottombackground{
         //   height: 180px;
       }
         .bgsvg{
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        margin:  0px auto;
         height: 170px;
         width: 300px;
-        // bottom: -10px;
-        display: none;
     }
 }
 body{

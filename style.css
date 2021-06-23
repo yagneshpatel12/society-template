@@ -1008,10 +1008,16 @@ button {
   #footer .share a {
     margin: 0px 5px;
   }
+  .loginpage {
+    padding-top: 80px;
+  }
   .loginpage .bgsvg {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    margin: 0px auto;
     height: 170px;
     width: 300px;
-    display: none;
   }
 }
 
