@@ -659,13 +659,6 @@ button {
   }
 }
 
-@media screen and (max-width: 2000px) {
-  #footer .footerheading {
-    font-size: 20px;
-    background-color: yellow !important;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   #mainSection .textSection .heading {
     font-size: 40px;
