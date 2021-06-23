@@ -875,7 +875,7 @@ margin:20px;
                font-size: 24px;
            }
            .rightSide{
-               overflow: hidden;
+               overflow: hidden !important;
                min-height: 0px;
             max-height: 0px;
                position: absolute;

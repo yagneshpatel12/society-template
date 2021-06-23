@@ -63,7 +63,6 @@ nav #line3 {
 nav .rightSide {
   z-index: 1000;
   margin-right: 50px;
-  overflow: visible;
   transition: .5s;
   max-height: 35px;
   min-height: 35px;
@@ -74,12 +73,10 @@ nav .rightSide ul {
   align-items: center;
   justify-content: center;
   list-style: none;
-  overflow: visible;
 }
 
 nav .rightSide ul a {
   text-decoration: none;
-  overflow: visible;
 }
 
 nav .rightSide ul a li {
@@ -890,6 +887,7 @@ button {
     font-size: 24px;
   }
   nav .rightSide {
+    overflow: hidden !important;
     min-height: 0px;
     max-height: 0px;
     position: absolute;
@@ -1169,22 +1167,4 @@ button {
   .loginpage .form form div input {
     width: 80%;
   }
-}
-
-.ripple {
-  background-color: #aaa;
-  border-radius: 50%;
-  pointer-events: none;
-  position: absolute;
-  transform: scale(0);
-}
-
-.start {
-  transform: scale(0.2);
-}
-
-.active {
-  transform: scale(2);
-  transition: transform 700ms, opacity 700ms;
-  opacity: 0.2;
 }
