@@ -654,6 +654,17 @@ button {
   display: inline;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  #footer .footerDiscription {
+    font-size: 14px !important;
+    background-color: #805300;
+  }
+  #footer .footerHeading {
+    font-size: 20px !important;
+    background-color: #4c00ff;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #mainSection .textSection .heading {
     font-size: 40px;

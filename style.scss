@@ -603,42 +603,19 @@ grid-column: 1/5;
         }
     }
 }
-// @media screen and (min-width:900px) and (max-width:1000px){
-//     #footer{
-//         .footersms{
-//             div p{
-//                 p{
-//                     font-size: 20px !important;
-//                     background-color: red;
-//                 }
-//             }
-//             p{
-//                 font-size: 14px !important;
-//                 background-color: yellow;
-//             }
-//         }
-//         .about{
-//             p{
-//                 font-size: 20px !important;
-//                 background-color: red;
-//             }
-//             a{
-//                 font-size: 14px !important;
-//                 background-color: yellow;
-//             }
-//         }
-//         .location{
-//             p{
-//                 font-size: 20px !important;
-//                 background-color: red;
-//             }
-//             pre{
-//                 font-size: 14px !important;
-//                 background-color: rgb(98, 0, 255);
-//             }
-//         }
-//     }
-// }
+@media screen and (min-width:900px) and (max-width:1000px){
+    #footer{
+        .footerDiscription{
+            font-size: 14px !important;
+            background-color: rgb(128, 83, 0);
+        }
+        .footerHeading{
+            font-size: 20px !important;
+            background-color: rgb(76, 0, 255);
+        }
+       
+    }
+}
 
 //responsive
 @media screen and (max-width: 1024px){
