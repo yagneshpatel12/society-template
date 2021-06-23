@@ -413,6 +413,7 @@ p{
     font-size: 24px;
     color: black;
     margin-bottom: 17px;
+    text-align: start;
 }
 a{
     text-decoration: none;
@@ -428,6 +429,7 @@ p{
 margin-bottom: 17px;
     font-size: 24px;
     color:black;
+    text-align:start;
 }
 pre{
     font-size: 17px;
@@ -443,6 +445,7 @@ p{
     font-size: 24px;
     color:black;
     margin-bottom: 17px;
+    text-align: start;
 }
 form{
     input ,textarea{
@@ -452,7 +455,10 @@ width: 90%;
 margin: 5px;
 border: none;
 outline: none;
-border-radius: 7px;
+border-radius: 5px;
+&:hover{
+    box-shadow: 0px 1px 7.5px #06FE10;
+}
     }
     button[type="submit"]{
         color: white;
@@ -708,6 +714,9 @@ grid-column: 1/5;
            padding-left: 40px;
        }
        .getintouch{
+           p{
+               text-align: center;
+           }
            text-align: center;
          grid-column: 1/5;
          grid-row: 3/4;
@@ -790,6 +799,9 @@ margin:20px;
             }
         }
         .about{
+            p{
+                text-align: center;
+            }
             text-align: center;
           grid-column: 1/2;
           margin-left: 10px;
@@ -807,6 +819,7 @@ margin:20px;
             margin-left: 10px;
             p{
                 font-size: 20px;
+                text-align: center;
             }
             pre{
                 font-size: 14px;

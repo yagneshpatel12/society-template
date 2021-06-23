@@ -478,6 +478,7 @@ button {
   font-size: 24px;
   color: black;
   margin-bottom: 17px;
+  text-align: start;
 }
 
 #footer .about a {
@@ -493,6 +494,7 @@ button {
   margin-bottom: 17px;
   font-size: 24px;
   color: black;
+  text-align: start;
 }
 
 #footer .location pre {
@@ -510,6 +512,7 @@ button {
   font-size: 24px;
   color: black;
   margin-bottom: 17px;
+  text-align: start;
 }
 
 #footer .getintouch form input, #footer .getintouch form textarea {
@@ -519,7 +522,11 @@ button {
   margin: 5px;
   border: none;
   outline: none;
-  border-radius: 7px;
+  border-radius: 5px;
+}
+
+#footer .getintouch form input:hover, #footer .getintouch form textarea:hover {
+  box-shadow: 0px 1px 7.5px #06FE10;
 }
 
 #footer .getintouch form button[type="submit"] {
@@ -737,6 +744,9 @@ button {
     grid-column: 1/5;
     grid-row: 3/4;
   }
+  #footer .getintouch p {
+    text-align: center;
+  }
   #footer .copyright {
     grid-column: 1/5;
     text-align: center;
@@ -814,6 +824,9 @@ button {
     margin-left: 10px;
   }
   #footer .about p {
+    text-align: center;
+  }
+  #footer .about p {
     font-size: 20px;
   }
   #footer .about a {
@@ -827,6 +840,7 @@ button {
   }
   #footer .location p {
     font-size: 20px;
+    text-align: center;
   }
   #footer .location pre {
     font-size: 14px;
