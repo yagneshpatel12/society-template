@@ -560,12 +560,6 @@ button {
   width: 450px;
 }
 
-.loginpage .bgsvg .bottombackground {
-  background-color: #7A89BF;
-  width: 100%;
-  height: 0px;
-}
-
 .loginpage .background {
   position: absolute;
   top: 0;
@@ -578,12 +572,12 @@ button {
 
 .loginpage .background img {
   height: 101%;
-  width: 100%;
+  width: 99%;
   margin-left: -5px;
 }
 
 .loginpage .form {
-  margin: 61px auto;
+  margin: 60px auto;
   width: 100%;
   position: relative;
   z-index: 100;
@@ -1014,16 +1008,10 @@ button {
   #footer .share a {
     margin: 0px 5px;
   }
-  .loginpage .bottombackground {
-    height: 180px;
-  }
   .loginpage .bgsvg {
     height: 170px;
     width: 300px;
     display: none;
-  }
-  * {
-    overflow: hidden;
   }
 }
 
