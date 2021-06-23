@@ -444,6 +444,12 @@ button {
   margin-bottom: 30px;
 }
 
+#footer .footersms div p {
+  font-size: 17px;
+  color: black;
+  text-align: center;
+}
+
 #footer .footersms div #footerlogo {
   display: flex;
   justify-content: center;
@@ -455,8 +461,18 @@ button {
   color: white;
 }
 
+#footer .footersms p {
+  font-size: 17px;
+}
+
 #footer .about {
   padding-left: 40px;
+}
+
+#footer .about p {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 17px;
 }
 
 #footer .about a {
@@ -652,33 +668,6 @@ button {
   display: inline;
 }
 
-@media screen and (min-width: 900px) and (max-width: 1000px) {
-  #footer .footersms div p p {
-    font-size: 20px !important;
-    background-color: red;
-  }
-  #footer .footersms p {
-    font-size: 14px !important;
-    background-color: yellow;
-  }
-  #footer .about p {
-    font-size: 20px !important;
-    background-color: red;
-  }
-  #footer .about a {
-    font-size: 14px !important;
-    background-color: yellow;
-  }
-  #footer .location p {
-    font-size: 20px !important;
-    background-color: red;
-  }
-  #footer .location pre {
-    font-size: 14px !important;
-    background-color: #6200ff;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   #mainSection .textSection .heading {
     font-size: 40px;
@@ -739,7 +728,7 @@ button {
     padding-left: 40px;
   }
   #footer .getintouch {
-    margin-left: 30px;
+    text-align: center;
     grid-column: 1/5;
     grid-row: 3/4;
   }
