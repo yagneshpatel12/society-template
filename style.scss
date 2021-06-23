@@ -594,8 +594,8 @@ grid-column: 1/5;
 @media screen and (max-width:1000px){
     #footer{
         .footerheading{
-            font-size: 20px;
-            background-color: green !important;
+            font-size: 20px !important;
+            background-color: rgb(128, 0, 60) !important;
         }
     }
 }

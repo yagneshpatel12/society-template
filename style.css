@@ -654,8 +654,8 @@ button {
 
 @media screen and (max-width: 1000px) {
   #footer .footerheading {
-    font-size: 20px;
-    background-color: green !important;
+    font-size: 20px !important;
+    background-color: #80003c !important;
   }
 }
 
