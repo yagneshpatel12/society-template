@@ -55,13 +55,16 @@ transform-origin: bottom left;
     transition: .5s;
     max-height: 35px;
     min-height: 35px;
+    overflow: visible;
    ul{
        display: flex;
        align-items: center;
        justify-content: center;
        list-style: none;
+       overflow: visible;
        a{
           text-decoration: none;
+          overflow: visible;
           li{
               font-size: 17px;
               margin-right: 30px;
@@ -69,6 +72,7 @@ transform-origin: bottom left;
         }
         #signBtn{
             margin-right: 30px;
+
         }
         #getStartedBtn{
           background-color: #06FE10;
@@ -917,7 +921,7 @@ margin:20px;
                       width: 100vw;
                       margin: 8px 0px;
                       padding:12px 0px;
-                      box-shadow: 1px 1px 40px rgb(231, 231, 231);
+                      box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
                       border-radius: 0px;
                   }
               }

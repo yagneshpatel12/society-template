@@ -66,6 +66,7 @@ nav .rightSide {
   transition: .5s;
   max-height: 35px;
   min-height: 35px;
+  overflow: visible;
 }
 
 nav .rightSide ul {
@@ -73,10 +74,12 @@ nav .rightSide ul {
   align-items: center;
   justify-content: center;
   list-style: none;
+  overflow: visible;
 }
 
 nav .rightSide ul a {
   text-decoration: none;
+  overflow: visible;
 }
 
 nav .rightSide ul a li {
@@ -932,7 +935,7 @@ button {
     width: 100vw;
     margin: 8px 0px;
     padding: 12px 0px;
-    box-shadow: 1px 1px 40px #e7e7e7;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
     border-radius: 0px;
   }
   .primaryHeading {
