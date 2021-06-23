@@ -605,24 +605,15 @@ grid-column: 1/5;
 }
 @media screen and (min-width:900px) and (max-width:1000px) and (orientation: portrait) {
     #footer{
-        .about{
-            p{
-                font-size: 15px !important;
-                background-color: red;
-            }
-            a{
-                font-size: 10px !important;
-                background-color: yellow;
-            }
+      
+        .footerDiscription{
+            font-size: 7px !important;
+            background-color: rgb(36, 128, 0);
         }
-        // .footerDiscription{
-        //     font-size: 14px !important;
-        //     background-color: rgb(36, 128, 0);
-        // }
-        // .footerHeading{
-        //     font-size: 20px !important;
-        //     background-color: rgb(76, 0, 255);
-        // }
+        .footerHeading{
+            font-size: 10px !important;
+            background-color: rgb(76, 0, 255);
+        }
        
     }
 }
