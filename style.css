@@ -419,6 +419,16 @@ button {
   background-color: #B0A7E6;
 }
 
+#footer .footerheading {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#footer .footerdiscription {
+  font-size: 14px;
+}
+
 #footer .topSpace {
   grid-column: 1/5;
 }
@@ -434,12 +444,6 @@ button {
   margin-bottom: 30px;
 }
 
-#footer .footersms div p {
-  font-size: 17px;
-  color: black;
-  text-align: center;
-}
-
 #footer .footersms div #footerlogo {
   display: flex;
   justify-content: center;
@@ -451,18 +455,8 @@ button {
   color: white;
 }
 
-#footer .footersms p {
-  font-size: 17px;
-}
-
 #footer .about {
   padding-left: 40px;
-}
-
-#footer .about p {
-  font-size: 24px;
-  color: black;
-  margin-bottom: 17px;
 }
 
 #footer .about a {

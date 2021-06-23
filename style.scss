@@ -364,6 +364,14 @@ margin-bottom: 100px;
 grid-template-columns:2fr 1fr 1fr 2fr;
 grid-gap: 15px;
 background-color: #B0A7E6;
+.footerheading{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.footerdiscription{
+    font-size: 14px;
+}
 .topSpace{
     grid-column: 1/5;
 }
@@ -376,11 +384,11 @@ background-color: #B0A7E6;
      justify-content: space-between;
      align-items: flex-start;
      margin-bottom: 30px;
-     p{
-         font-size: 17px;
-         color:black;
-         text-align: center;
-     }
+    //  p{
+    //      font-size: 17px;
+    //      color:black;
+    //      text-align: center;
+    //  }
      #footerlogo{
         display: flex;
         justify-content: center;
@@ -392,18 +400,18 @@ background-color: #B0A7E6;
         color: white;
      }
  }
- p{
-font-size: 17px;
+//  p{
+// font-size: 17px;
 
- }
+//  }
    }
    .about{
 padding-left: 40px;
-p{
-    font-size: 24px;
-    color: black;
-    margin-bottom: 17px;
-}
+// p{
+//     font-size: 24px;
+//     color: black;
+//     margin-bottom: 17px;
+// }
 a{
     text-decoration: none;
     font-size: 17px;
