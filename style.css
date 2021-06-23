@@ -654,6 +654,15 @@ button {
   display: inline;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1000px) and (orientation: portrait) {
+  #footer .footerDiscription {
+    font-size: 7px !important;
+  }
+  #footer .footerHeading {
+    font-size: 10px !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #mainSection .textSection .heading {
     font-size: 40px;
@@ -702,12 +711,6 @@ button {
   #footer {
     grid-template-rows: 10px 220px 400px 55px 40px 10px;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-  }
-  #footer .footerHeading {
-    font-size: 22px;
-  }
-  #footer .footerDiscription {
-    font-size: 16px;
   }
   #footer .footersms {
     grid-column: 1/3;
