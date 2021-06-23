@@ -653,33 +653,29 @@ button {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1000px) {
-  #footer .footerheading {
-    font-size: 20px !important;
-    background-color: #80003c !important;
-  }
   #footer .footersms div p p {
-    font-size: 20px;
+    font-size: 20px !important;
     background-color: red;
   }
   #footer .footersms p {
-    font-size: 14px;
+    font-size: 14px !important;
     background-color: yellow;
   }
   #footer .about p {
-    font-size: 20px;
+    font-size: 20px !important;
     background-color: red;
   }
   #footer .about a {
-    font-size: 14px;
+    font-size: 14px !important;
     background-color: yellow;
   }
   #footer .location p {
-    font-size: 20px;
+    font-size: 20px !important;
     background-color: red;
   }
   #footer .location pre {
-    font-size: 14px;
-    background-color: yellow;
+    font-size: 14px !important;
+    background-color: #6200ff;
   }
 }
 
@@ -773,7 +769,6 @@ button {
   }
   #footer .footerheading {
     font-size: 20px;
-    background-color: red;
   }
   #footer .footersms {
     margin-left: 10px;

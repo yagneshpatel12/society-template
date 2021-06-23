@@ -593,40 +593,36 @@ grid-column: 1/5;
 }
 @media screen and (min-width:900px) and (max-width:1000px){
     #footer{
-        .footerheading{
-            font-size: 20px !important;
-            background-color: rgb(128, 0, 60) !important;
-        }
         .footersms{
             div p{
                 p{
-                    font-size: 20px;
+                    font-size: 20px !important;
                     background-color: red;
                 }
             }
             p{
-                font-size: 14px;
+                font-size: 14px !important;
                 background-color: yellow;
             }
         }
         .about{
             p{
-                font-size: 20px;
+                font-size: 20px !important;
                 background-color: red;
             }
             a{
-                font-size: 14px;
+                font-size: 14px !important;
                 background-color: yellow;
             }
         }
         .location{
             p{
-                font-size: 20px;
+                font-size: 20px !important;
                 background-color: red;
             }
             pre{
-                font-size: 14px;
-                background-color: yellow;
+                font-size: 14px !important;
+                background-color: rgb(98, 0, 255);
             }
         }
     }
@@ -746,7 +742,7 @@ margin:20px;
     #footer{
         .footerheading{
             font-size: 20px;
-            background-color: red;
+            // background-color: red;
         }
         grid-gap:10px;
         .footersms{
