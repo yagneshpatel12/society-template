@@ -63,7 +63,7 @@ nav #line3 {
 nav .rightSide {
   z-index: 1000;
   margin-right: 50px;
-  overflow: hidden;
+  overflow: visible;
   transition: .5s;
   max-height: 35px;
   min-height: 35px;
@@ -74,10 +74,12 @@ nav .rightSide ul {
   align-items: center;
   justify-content: center;
   list-style: none;
+  overflow: visible;
 }
 
 nav .rightSide ul a {
   text-decoration: none;
+  overflow: visible;
 }
 
 nav .rightSide ul a li {
@@ -97,7 +99,7 @@ nav .rightSide ul #getStartedBtn {
 button {
   font-size: 17px;
   padding: 6px 10px;
-  box-shadow: 2px 5px 25px silver;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: white;
   border: none;
   outline: none;
@@ -112,6 +114,11 @@ button {
   align-items: center;
   width: 100%;
   min-width: 100vw;
+  overflow: visible;
+}
+
+#mainSection .textSection {
+  overflow: visible;
 }
 
 #mainSection .textSection .heading {
@@ -135,11 +142,11 @@ button {
   cursor: pointer;
   border-radius: 12px;
   margin-top: 20px;
-  box-shadow: 2px 2px 25px #cccccc;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
 }
 
 #mainSection .textSection .searchSection:hover {
-  box-shadow: 3px 3px 30px #b9b9b9;
+  box-shadow: 1px 3px 25px #b9b9b9;
 }
 
 #mainSection .textSection .searchSection input {
@@ -217,6 +224,7 @@ button {
   width: 80%;
   margin: auto;
   margin-top: 20px;
+  overflow: visible;
 }
 
 .serviceSection .cardSection .card {
@@ -229,12 +237,12 @@ button {
   width: 240px;
   background-color: white;
   padding: 0px 5px;
-  box-shadow: 2px 5px 25px #cccccc;
-  transition: all .3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+  transition: all .3s !important;
 }
 
 .serviceSection .cardSection .card:hover {
-  box-shadow: 5px 5px 30px #adadad;
+  box-shadow: 1px 3px 25px #b9b9b9;
   margin-top: 10px;
 }
 
@@ -253,7 +261,6 @@ button {
 .serviceSection .cardSection .card .cardIcon img {
   height: 60%;
   width: 60%;
-  margin-left: 5px;
 }
 
 .serviceSection .cardSection .card .details {
@@ -339,18 +346,19 @@ button {
 }
 
 .postSection .posts .postCard {
+  overflow: visible;
   cursor: pointer;
   margin: 50px;
   border-radius: 10px;
   width: 250px;
   text-align: center;
-  box-shadow: 2px 5px 25px #cccccc;
-  transition: all .3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+  transition: all .3s !important;
   padding-bottom: 17px;
 }
 
 .postSection .posts .postCard:hover {
-  box-shadow: 5px 5px 30px #adadad;
+  box-shadow: 1px 3px 25px #b9b9b9;
   margin-top: 0px;
 }
 
@@ -1161,4 +1169,22 @@ button {
   .loginpage .form form div input {
     width: 80%;
   }
+}
+
+.ripple {
+  background-color: #aaa;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0);
+}
+
+.start {
+  transform: scale(0.2);
+}
+
+.active {
+  transform: scale(2);
+  transition: transform 700ms, opacity 700ms;
+  opacity: 0.2;
 }
