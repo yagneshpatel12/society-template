@@ -427,14 +427,14 @@ button {
   background-color: #B0A7E6;
 }
 
-#footer .footerheading {
+#footer .footerHeading {
   font-size: 24px;
   color: black;
-  text-align: center;
+  text-align: start;
 }
 
-#footer .footerdiscription {
-  font-size: 14px;
+#footer .footerDiscription {
+  font-size: 17px;
 }
 
 #footer .topSpace {
@@ -452,12 +452,6 @@ button {
   margin-bottom: 30px;
 }
 
-#footer .footersms div p {
-  font-size: 17px;
-  color: black;
-  text-align: center;
-}
-
 #footer .footersms div #footerlogo {
   display: flex;
   justify-content: center;
@@ -469,24 +463,12 @@ button {
   color: white;
 }
 
-#footer .footersms p {
-  font-size: 17px;
-}
-
 #footer .about {
   padding-left: 40px;
 }
 
-#footer .about p {
-  font-size: 24px;
-  color: black;
-  margin-bottom: 17px;
-  text-align: start;
-}
-
 #footer .about a {
   text-decoration: none;
-  font-size: 17px;
   display: block;
   color: #666;
   margin: 10px 0px;
@@ -495,13 +477,6 @@ button {
 
 #footer .location p {
   margin-bottom: 17px;
-  font-size: 24px;
-  color: black;
-  text-align: start;
-}
-
-#footer .location pre {
-  font-size: 17px;
 }
 
 #footer .getintouch {
@@ -512,10 +487,7 @@ button {
 }
 
 #footer .getintouch p {
-  font-size: 24px;
-  color: black;
   margin-bottom: 17px;
-  text-align: start;
 }
 
 #footer .getintouch form input, #footer .getintouch form textarea {
@@ -539,7 +511,6 @@ button {
 }
 
 #footer .copyright {
-  font-size: 17px;
   margin-top: 10px;
   margin-left: 30px;
   grid-column: 1/4;
@@ -808,6 +779,12 @@ button {
     grid-template-rows: 10px 220px 200px 380px 35px 50px 5px;
     grid-template-columns: 1fr 1fr;
   }
+  #footer .footerDiscription {
+    font-size: 14px;
+  }
+  #footer .footerHeading {
+    font-size: 20px;
+  }
   #footer .topSpace {
     grid-column: 1/3;
   }
@@ -821,11 +798,9 @@ button {
   }
   #footer .footersms div p {
     margin-top: 5px;
-    font-size: 20px !important;
   }
   #footer .footersms p {
     text-align: center;
-    font-size: 14px;
   }
   #footer .about {
     text-align: center;
@@ -835,12 +810,6 @@ button {
   #footer .about p {
     text-align: center;
   }
-  #footer .about p {
-    font-size: 20px;
-  }
-  #footer .about a {
-    font-size: 14px;
-  }
   #footer .location {
     padding-left: 0px;
     text-align: center;
@@ -848,11 +817,7 @@ button {
     margin-left: 10px;
   }
   #footer .location p {
-    font-size: 20px;
     text-align: center;
-  }
-  #footer .location pre {
-    font-size: 14px;
   }
   #footer .getintouch {
     margin-left: 0px;
@@ -860,7 +825,6 @@ button {
     grid-row: 4/5;
   }
   #footer .getintouch p {
-    font-size: 20px;
     text-align: center;
   }
   #footer .getintouch form {
@@ -883,7 +847,6 @@ button {
   #footer .copyright {
     grid-column: 1/3;
     grid-row: 6/8;
-    font-size: 15px;
   }
   #footer .bottomSpace {
     grid-column: 1/3;
