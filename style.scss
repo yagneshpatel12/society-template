@@ -591,6 +591,22 @@ grid-column: 1/5;
         }
     }
 }
+@media screen and (max-width:1000px){
+    #footer{
+        .footerheading{
+            font-size: 20px;
+            background-color: green !important;
+        }
+    }
+}
+@media screen and (max-width:2000px){
+    #footer{
+        .footerheading{
+            font-size: 20px;
+            background-color: yellow !important;
+        }
+    }
+}
 //responsive
 @media screen and (max-width: 1024px){
     #mainSection{
