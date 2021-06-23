@@ -657,7 +657,7 @@ button {
 @media screen and (min-width: 900px) and (max-width: 1000px) and (orientation: portrait) {
   #footer .footerDiscription {
     font-size: 14px !important;
-    background-color: #805300;
+    background-color: #248000;
   }
   #footer .footerHeading {
     font-size: 20px !important;
