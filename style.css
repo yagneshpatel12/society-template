@@ -752,7 +752,12 @@ button {
     grid-gap: 10px;
   }
   #footer .footerheading {
-    font-size: 20px;
+    font-size: 20px !important;
+    background-color: red;
+  }
+  #footer .footerDiscription {
+    font-size: 14px !important;
+    background-color: green;
   }
   #footer .footersms {
     margin-left: 10px;
@@ -780,10 +785,10 @@ button {
     grid-template-columns: 1fr 1fr;
   }
   #footer .footerDiscription {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   #footer .footerHeading {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   #footer .topSpace {
     grid-column: 1/3;

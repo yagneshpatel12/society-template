@@ -761,8 +761,12 @@ margin:20px;
 @media screen and (max-width:900px){
     #footer{
         .footerheading{
-            font-size: 20px;
-            // background-color: red;
+            font-size: 20px !important;
+            background-color: red;
+        }
+        .footerDiscription{
+            font-size: 14px !important;
+            background-color: green;
         }
         grid-gap:10px;
         .footersms{
@@ -790,10 +794,10 @@ margin:20px;
         grid-template-rows: 10px 220px 200px 380px 35px 50px 5px;
         grid-template-columns:1fr 1fr;
         .footerDiscription{
-            font-size: 14px;
+            font-size: 14px !important;
         }
         .footerHeading{
-            font-size: 20px;
+            font-size: 20px !important;
         }
         .topSpace{
             grid-column: 1/3;
