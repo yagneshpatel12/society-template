@@ -603,7 +603,7 @@ grid-column: 1/5;
         }
     }
 }
-@media screen and (min-width:900px) and (max-width:1000px){
+@media screen and (min-width:900px) and (max-width:1000px) and (orientation: portrait) {
     #footer{
         .footerDiscription{
             font-size: 14px !important;
@@ -688,12 +688,6 @@ grid-column: 1/5;
         }
        .about{
          grid-column: 3/4;
-         p{
-             font-size: 20px !important;
-         }
-         a{
-             font-size: 14px !important;
-         }
        }
        .location{
    
@@ -737,14 +731,6 @@ margin:20px;
 }
 @media screen and (max-width:900px){
     #footer{
-        .footerHeading{
-            font-size: 20px !important;
-            background-color: red;
-        }
-        .footerDiscription{
-            font-size: 14px !important;
-            background-color: green;
-        }
         grid-gap:10px;
         .footersms{
             margin-left: 10px;

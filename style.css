@@ -654,7 +654,7 @@ button {
   display: inline;
 }
 
-@media screen and (min-width: 900px) and (max-width: 1000px) {
+@media screen and (min-width: 900px) and (max-width: 1000px) and (orientation: portrait) {
   #footer .footerDiscription {
     font-size: 14px !important;
     background-color: #805300;
@@ -720,12 +720,6 @@ button {
   #footer .about {
     grid-column: 3/4;
   }
-  #footer .about p {
-    font-size: 20px !important;
-  }
-  #footer .about a {
-    font-size: 14px !important;
-  }
   #footer .location {
     grid-column: 4/5;
     padding-left: 40px;
@@ -761,14 +755,6 @@ button {
 @media screen and (max-width: 900px) {
   #footer {
     grid-gap: 10px;
-  }
-  #footer .footerHeading {
-    font-size: 20px !important;
-    background-color: red;
-  }
-  #footer .footerDiscription {
-    font-size: 14px !important;
-    background-color: green;
   }
   #footer .footersms {
     margin-left: 10px;
